@@ -1,2 +1,7 @@
-<h1>Bills#index</h1>
-<p>Find me in app/views/bills/index.html.erb</p>
+<%= form_tag(root_path, method: :get) do %>
+	<%= label_tag "Ingresar el id del cliente" %>
+	<%= text_field_tag :id %>
+	<%= submit_tag "buscar"%>
+<%end %>
+
+<p>Durante el periodo solicitado, el cliente tiene: <%= @response %>  facturas</p> 
