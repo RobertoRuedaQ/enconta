@@ -1,7 +1,2 @@
-<%= form_tag(root_path, method: :get) do %>
-	<%= label_tag "Ingresar el id del cliente" %>
-	<%= text_field_tag :id %>
-	<%= submit_tag "buscar"%>
-<%end %>
 
-<p>Durante el periodo solicitado, el cliente tiene: <%= @response %>  facturas</p> 
+<p>Durante el 2017, el cliente con el id <%= @response.id %> tiene un total de <%= @response.bills_counter %> </p>
